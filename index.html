@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="decription" content="Exemplo de descrição para o meu site.">
+    <meta name="keywords" content="palavra-chaves,separadas,por,virgula">
+    <meta name="author" content="Fabricio Cavalcante">
+    <!-- <meta http-equiv="refresh" content="30"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Atividade Array</title>
+    <script src="assets/js/main.js" ></script>
+</head>
+<body onresize="ajustaTamanho()">
+
+   
+    <!-- PODEMOS REMOVER A IMAGEM DEPOIS DE CRIARMOS NO JS -->
+    <!-- <img class="mosquito1" src="assets/img/mosquito.png" alt="Imagem de um mosquito"> -->
+
+    <div class="painel">
+
+        <div class="vidas">
+            <img id="v1" src="assets/img/coracao_cheio.png" alt="Coração cheio">
+            <img id="v2" src="assets/img/coracao_cheio.png" alt="Coração cheio">
+            <img id="v3" src="assets/img/coracao_cheio.png" alt="Coração cheio">
+        </div><!-- vidas -->
+
+        <div class="cronometro">
+            Tempo restante: <span id="cronometro"></span>
+        </div><!-- cronometro -->
+        
+    </div><!-- painel -->
+    
+    <script>
+
+        //AQUI ELE IRA COMÇAE A CONTAGEM POR AQUI PARA DEPOIS IRA PARA O JS, ASSIM ELE FARA A CONTAGEM TODA 
+        document.getElementById('cronometro').innerHTML = tempo
+
+        posicaoRandomica()
+
+        let criaMosca = setInterval(function() {
+            posicaoRandomica()
+        }, criaMosquitoTempo)
+    </script>
+</body>
+</html> 
